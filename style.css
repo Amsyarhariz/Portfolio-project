@@ -1,0 +1,15 @@
+/* Custom Profile Image Styling */
+.profile-img {
+    width: 200px;           /* Sets the width of the image */
+    height: 200px;          /* Sets the height to match width (makes it a perfect square) */
+    object-fit: cover;      /* CRITICAL: Prevents the image from stretching or squishing */
+    border-radius: 50%;     /* Turns the square into a perfect circle */
+    border: 5px solid #fff; /* Adds a nice white border around the picture */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D pop effect */
+}
+
+/* smooth hover effect */
+.profile-img:hover {
+    transform: scale(1.05); /* Slightly zooms in when the mouse hovers over it */
+    transition: transform 0.3s ease-in-out; /* Makes the zoom smooth */
+}
